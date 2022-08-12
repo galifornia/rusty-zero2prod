@@ -3,3 +3,7 @@ rustflags = ["-C", "link-arg=-fuse-ld=/usr/local/bin/zld"]
 
 [target.aarch64-apple-darwin]
 rustflags = ["-C", "link-arg=-fuse-ld=/usr/local/bin/zld"]
+
+[dependencies]
+actix-web = "4.1.0"
+tokio = {version = "1", features = ["full"]}
